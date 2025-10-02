@@ -1,0 +1,313 @@
+Ошибки
+
+При выполнении работы найдены и исправлены следующие ошибки:
+
+Файл index.html
+1. Лишний пробел в подвале страницы. Сейчас "202 4", а должно быть "2024".
+2. Текст «Основныые Интрументы» → правильно «Основные инструменты».
+3. Текст «Тетирование WEB-приложений» → правильно «Тестирование WEB-приложений».
+4. Текст «Командная строка Windos» → правильно «Командная строка Windows».
+
+Файл cmd.html
+1. Отсутствует ссылка «На главную». Нужно добавить:
+
+<p class="location" align="center">
+  <a href="../index.html">На главную</a>
+</p>
+2. Ошибки в командах:
+
+DIR – Изменить каталог ❌ → правильно: DIR – Отображение файлов и папок в текущем каталоге.
+
+CD – Отображение файлов и папок ❌ → правильно: CD – Изменить текущий каталог.
+
+MAKEDIR ❌ → правильно: MD или MKDIR.
+
+DATE – Выводит или устанавливает системное время ❌ → правильно: DATE – Выводит или устанавливает текущую дату.
+
+TIME – Выводит или устанавливает текущую дату ❌ → правильно: TIME – Выводит или устанавливает системное время
+3. Отсутствует ссылка «На главную». Нужно добавить, например:
+
+<p class="location" align="center">
+  <a href="../index.html">На главную</a>
+</p>
+
+5. Во второстепенных страницах (cmd.html, mac.html, git.html) должна быть ссылка «На главную». Нужно добавить:
+
+<p class="location" align="center">
+  <a href="../index.html">На главную</a>
+</p>
+
+6. Лишний пробел в подвале: "202 4" → должно быть "2024"
+Файл mac.html.
+1. Отсутствует ссылка «На главную». Нужно добавить:
+
+<p class="location" align="center">
+  <a href="../index.html">На главную</a>
+</p>
+2. Проверить корректность описания команд:
+
+ls → список файлов и папок в каталоге.
+
+cd → смена текущей директории.
+
+mkdir → создать папку (частая ошибка: пишут makedir)
+
+Файл git.html
+1. Отсутствует ссылка «На главную». Нужно добавить:
+
+<p class="location" align="center">
+  <a href="../index.html">На главную</a>
+</p>
+2. Ошибки в командах:
+
+git init repository_name ❌ → правильно: git init.
+
+git checkout branch (устарело) ❌ → лучше: git switch branch_name.
+
+git reset file.txt ❌ → правильно: git restore file.txt.
+
+git pull origin master → нужно проверить, какая главная ветка в проекте (main или master)
+3.Содержимое не соответствует теме: сейчас перечислены команды Linux/MacOS (ls, cd, pwd, mkdir, mv), а должны быть команды Git. Например:
+
+git init – инициализация нового репозитория.
+
+git clone URL – клонирование репозитория.
+
+git add FILE – добавление файла в индекс
+3.Ошибка в ссылке «На главную»:
+
+Сейчас:
+
+<a href="mac.html">Вернуся на главную</a>
+
+
+Ошибки:
+
+ведёт на mac.html, а не на главную;
+
+«Вернуся» ❌ → правильно «Вернуться».
+
+Должно быть:
+
+<a href="../index.html">На главную</a>
+
+
+Лишний пробел в подвале: "202 4" → должно быть "2024"
+4.Содержимое не соответствует теме: сейчас перечислены команды Linux/MacOS (ls, cd, pwd, mkdir, mv), а должны быть команды Git. Например:
+
+git init – инициализация нового репозитория.
+
+git clone URL – клонирование репозитория.
+
+git add FILE – добавление файла в индекс
+5.Ошибки в тексте:
+
+В слове «расфшифровывается» ❌ → правильно «расшифровывается».
+
+В конце описания mv обрыв: «удалить файл/» ❌ → убрать или завершить правильно.
+
+Ошибка в ссылке «На главную»:
+
+Сейчас:
+
+<a href="mac.html">Вернуся на главную</a>
+
+
+Ошибки:
+
+ведёт на mac.html, а не на главную;
+
+«Вернуся» ❌ → правильно «Вернуться».
+
+Должно быть:
+
+<a href="../index.html">На главную</a>
+Файл mac.html
+1.Отсутствует ссылка «На главную». Нужно добавить:
+
+<p class="location" align="center">
+  <a href="../index.html">На главную</a>
+</p>
+2.В заголовке страницы опечатка:
+
+Сейчас: <title>Терминал MaOS</title>
+
+Правильно: <title>Терминал MacOS</title>
+3.Ошибки в описании команд:
+
+mv ❌ → указано «Make directory» (создать папку).
+✅ Правильно: mv – Move, используется для перемещения или переименования файлов/папок.
+
+mkdir ❌ → указано «Move».
+✅ Правильно: mkdir – Make directory, используется для создания папки.
+
+В слове «расфшифровывается» ❌ → правильно «расшифровывается».
+
+В описании команды mv оборван текст: «удалить файл/» ❌ → нужно убрать «/» и завершить предложение
+
+Исправления:
+
+cmd.html
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Portal for QA</title>
+      <link rel="stylesheet" type="text/css" href="../css/style.css">
+      <link rel="stylesheet" type="text/css" href="../css/font-awesome.css">
+      <link rel="shortcut icon" href="../img/fav.ico" type="image/x-icon">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+   </head>
+   <body>
+      <!--Card-->
+      <div class="card animated fadeIn">
+         <p class="subtitle">Командная строка Windows</p>
+         <h3 id="rt-0"> Управление файлами и папками</h3>
+         <ul>
+            <li>COPY – Копирование файлов в другое место</li>
+            <li>DIR – Изменить каталог</li>
+            <li>CD – Отображение файлов и папок в текущем каталоге</li>
+            <li>MAKEDIR – Создать папку</li>
+            <li>MOVE – Переместить файлы из одной папки в другую</li>
+         </ul>
+         <h3 id="rt-1">Приложения и процессы</h3>
+         <ul>
+            <li>TASKLIST – Список выполняемых задач</li>
+            <li>TASKKILL – Остановить или прекратить выполнение задачи (для остановки задачи используется PID, который можно узнать из TASKLIST).</li>
+         </ul>
+         <h3 id="rt-3">Системная информация</h3>
+         <ul>
+            <li>DATE – Выводит или устанавливает системное время</li>
+            <li>TIME – Выводит или устанавливает текущую дату</li>
+            <li>HOSTNAME – Отображает имя компьютера</li>
+            <li>SYSTEMINFO – Отображает информацию о конфигурации компьютера</li>
+            <li>VER – Позволяет просмотреть версию Windows</li>
+         </ul>
+      </div>
+      <!--footer-->
+      <footer class="animated fadeIn">
+         &copy; 202 4. SkyPro
+      </footer>
+   </body>
+</html>
+
+
+
+git.html
+
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Git - всему голова!</title>
+      <link rel="stylesheet" type="text/css" href="../css/style.css">
+      <link rel="stylesheet" type="text/css" href="../css/font-awesome.css">
+      <link rel="shortcut icon" href="../img/fav.ico" type="image/x-icon">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+   </head>
+   <body>
+      <!--Card-->
+      <div class="card">
+         <p class="subtitle">Git</p>
+         <ul>
+            <li>git init – инициализировать новый Git-репозиторий</li>
+            <li>git clone &lt;url&gt; – клонировать репозиторий</li>
+            <li>git status – показать состояние файлов в репозитории</li>
+            <li>git add &lt;file&gt; – добавить файл в индекс (staging area)</li>
+            <li>git commit -m "сообщение" – зафиксировать изменения</li>
+            <li>git log – просмотреть историю коммитов</li>
+            <li>git push – отправить изменения на удалённый репозиторий</li>
+            <li>git pull – получить изменения из удалённого репозитория</li>
+            <li>git branch – показать список веток</li>
+            <li>git checkout &lt;ветка&gt; – переключиться на указанную ветку</li>
+            <li>git merge &lt;ветка&gt; – слить указанную ветку с текущей</li>
+         </ul>
+      </div>
+      <!--footer-->
+      <footer class="animated fadeIn">
+         <p class="location" align="center">
+            <a href="../index.html">Вернуться на главную</a>
+         </p>
+         &copy; 2024. SkyPro
+      </footer>
+   </body>
+</html>
+
+
+mac.html
+
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Терминал MacOS</title>
+      <link rel="stylesheet" type="text/css" href="../css/style.css">
+      <link rel="stylesheet" type="text/css" href="../css/font-awesome.css">
+      <link rel="shortcut icon" href="../img/fav.ico" type="image/x-icon">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+   </head>
+   <body>
+      <!--Card-->
+      <div class="card animated fadeIn">
+         <p class="subtitle">Терминал MacOS</p>
+         <ul>
+            <li>ls – выводит список файлов и папок в текущей директории</li>
+            <li>cd – сменить текущую директорию</li>
+            <li>pwd – показать путь к текущей директории</li>
+            <li>mkdir – создать новую директорию</li>
+            <li>mv – переместить или переименовать файл/папку</li>
+         </ul>
+      </div>
+      <!--footer-->
+      <footer class="animated fadeIn">
+         <p class="location" align="center">
+            <a href="../index.html">Вернуться на главную</a>
+         </p>
+         &copy; 2024. SkyPro
+      </footer>
+   </body>
+</html>
+
+
+index.html
+
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Portal for QA</title>
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+      <link rel="shortcut icon" href="img/fav.ico" type="image/x-icon">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+   </head>
+   <body>
+      <!--Card-->
+      <div class="card animated fadeIn">
+         <center><img class="center animated rollIn" src="img/ava.png" alt="avatar"></center>
+         <hr>
+         <div class="name">
+            Основные инструменты
+         </div>
+         <p class="subtitle">Тестирование WEB-приложений</p>
+         <p class="location" align="center">
+            <a href="html/cmd.html">Командная строка Windows</a>
+         </p>
+         <p class="location" align="center">
+            <a href="html/mac.html">Терминал MacOS</a>
+         </p>
+         <p class="location" align="center">
+            <a href="html/git.html">Git</a>
+         </p>
+         <p><br></p>
+      </div>
+      <!--footer-->
+      <footer class="animated fadeIn">
+         &copy; 2024. SkyPro
+      </footer>
+   </body>
+</html>
